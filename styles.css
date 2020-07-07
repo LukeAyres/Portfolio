@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  font-family: 'Work Sans', sans-serif;
+}
+/* navbar styles */
+
+#navbar {
+  width: 100%;
+  position: fixed;
+  height: 50px;
+  background: linear-gradient(to bottom, cornflowerblue, #1ECBE1);
+  padding: 5px;
+  top: 0;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.4em;
+  float: right;
+  margin-right: 30px;
+  margin-top: 10px;
+}
+
+#navbar a:hover {
+  text-decoration: underline;
+}
+
+
+/* welcome section  */
+
+#welcome-section {
+  height: 100vh;
+  background-image: linear-gradient(to bottom right, #1ecbe1, #CCC);
+  text-align: center;
+}
+
+#welcome-section h1 {
+  padding-top: 200px;
+  font-size: 4em;
+}
+
+#welcome-section h2 {
+  font-size: 3em;
+  color: royalblue;
+  text-emphasis: italic;
+}
+
+/* project display section */
+#projects h3 {
+  color: green;
+  font-family: monospace;
+  font-size: 3em;
+  text-align: center;
+}
+
+#project-container {
+  padding: 20px 100px;
+  max-width: 100%;
+  min-height: 600px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 50px 40px;
+
+  color:white;
+}
+
+.project-display {
+  position: relative;
+}
+
+/* .project-display:hover {
+  opacity: 0.7;
+} */
+
+.project-display:hover .project-overlay,
+.project-display:hover .project-info {
+  visibility: visible;
+}
+
+/* ISSUE: HOW TO ALIGN TITLE WHEN POSITIONED ABSOLUTE */
+
+.project-title {
+  /* visibility: hidden; */
+  position: absolute;
+  top: 0;
+  left: 36%;
+  font-size: 1.3em;
+}
+
+.project-info {
+  visibility: hidden;
+  position: absolute;
+  top: 40px;
+  text-align: justify;
+  margin: 10px;
+}
+
+.project-view {
+  position: absolute;
+  top: 150px;
+  left: 36%;
+}
+
+.project-view a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-display img {
+  width: 100%;
+  height: 100%;
+}
+
+.project-overlay {
+  visibility: hidden;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  position: absolute;
+}
+
+/* #projects .project-display:nth-child(1) {
+  background-color: salmon;
+}
+#projects .project-display:nth-child(2) {
+  background-color: slateblue;
+}
+#projects .project-display:nth-child(3) {
+  background-color: aquamarine;
+}
+#projects .project-display:nth-child(4) {
+  background-color: palegoldenrod;
+} */

@@ -1,0 +1,47 @@
+@media (max-width: 1500px) {
+  #project-container {
+    padding: 20px 100px;
+  
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-gap: 50px 40px;
+  }
+}
+
+@media (max-width: 1000px) {
+  #project-container {
+    padding: 20px 10px;
+  
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-gap: 30px 40px;
+  }
+  #navbar a {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 700px) {
+  #project-container {
+    padding: 20px 10px;
+  
+    grid-template-columns: 1fr 1fr ;
+    grid-gap: 20px 30px;
+  }
+
+  #navbar a {
+    font-size: 1em;
+  }
+}
+
+
+@media (max-width: 500px) {
+  #project-container {
+    padding: 20px 10px;
+  
+    grid-template-columns: 1fr ;
+    grid-gap: 20px 30px;
+  }
+
+  #navbar a {
+    /* behold the hamburger */
+  }
+}
